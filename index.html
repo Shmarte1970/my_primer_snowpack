@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="/img/favicon-32x32.png" type="favicon-32x32">
-    <link rel="stylesheet" href="/css/main.css">
-    <link rel="stylesheet" href="/css/main.min.css">
+    <link rel="shortcut icon" href="./img/favicon-32x32.png" type="favicon-32x32">
+    <link rel="stylesheet" href="./css/main.css">    
+    <link rel="stylesheet" href="./css/main.min.css">
     <title>Sprint2_Exercici1</title>
 </head>
 <body>
@@ -18,7 +18,7 @@
     <nav class="navbar navbar-expand-lg navbar-light bg-light" id="menu">
         <div class="container-fluid btn-group">
           <a class="navbar-brand" href="#">
-           <img src="/img/logo-bookmark.png" alt="logo-bookmark">
+           <img src="./img/logo-bookmark.png" alt="logo-bookmark">
           </a>
           <button class="navbar-toggler mb-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -98,8 +98,8 @@
           </ul>
           <div class="tab-content" id="myTabContent">
             <div class="container-fluid mt-5 px-4 justify-content-center tab-pane fade show active" id="tab1" role="tabpanel" aria-labelledby="home-tab">
-                <div class="col-md-8 d-flex">
-                    <img class ="img_tab_1" src="/img/illustration-features-tab-1.png "  alt="illustration-features-tab-1.png" >
+                <div class="col-md-8 d-flex aling-start flex-column flex-md-row">
+                    <img class ="img-fluid" src="./img/illustration-features-tab-1.png "  alt="illustration-features-tab-1.png" >
                     <div class="container-fluid justify-content-sm-center col-md-10">
                         <h3 class="fs-5 mt-4 px-4 pb-1">Bookmark in one click</h3>
                         <p class="px4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat rerum, totam doloremque vero eveniet earum.</p>
@@ -125,25 +125,80 @@
                     </div>
                     
                 </div>            
-                <img class="img_tab_1 mt-4" src="/img/illustration-features-tab-2.png" alt="illustration-features-tab-2.png">
+                <img class="img-fluid mt-4" src="./img/illustration-features-tab-2.png" alt="illustration-features-tab-2.png">
             </div>
             <div class="tab-pane fade" id="tab3" role="tabpanel" aria-labelledby="contact-tab">
                 <div>
                     <h3 class="container-fluid d-flex justify-content-center mt-4">Easy Sharing</h3>
                 </div>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet, ratione ut. At adipisci tempore sint? Consectetur ratione unde, laboriosam voluptatibus hic quo blanditiis, officia, est velit maiores facere natus cupiditate!</p>
-                <img class="img_tab_1" src="/img/illustration-features-tab-3.png" alt="illustration-features-tab-3.png">
+                <img class="img-fluid" src="./img/illustration-features-tab-3.png" alt="illustration-features-tab-3.png">
             </div>
           </div>
           
     </div>
 </div>
 
-  
+<!--
+  Formulario Inscripción
+-->
 
-
-
-
+<div style="height: 30px;"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+            <div class="card shadow-lg p-3 mb-5 bg-white ">
+        <div class="card-header">Formulario Subcripción</div>
+        <div class="card-body">
+        <form method="post" class="needs-validation" novalidate>
+                  <div class="form-row">
+                    <div class="col-md-4 mb-3">
+                      <label for="nombre">Nombre</label>
+                      <input name="nombre" type="text" class="form-control" id="nombre" placeholder="" value="" required>
+                      <div class="valid-feedback">¡Ok válido!</div>
+                      <div class="invalid-feedback">Complete el campo.</div>    
+                    </div>
+                    <div class="col-md-4 mb-3">
+                      <label for="apellido">Apellido</label>
+                      <input name="apellido" type="text" class="form-control" id="apellido" placeholder="" value="" required>
+                      <div class="valid-feedback">¡Ok válido!</div>
+                      <div class="invalid-feedback">Complete el campo.</div>   
+                    </div>
+                  </div>
+                  <div class="form-row">
+                    <div class="col-md-4 mb-3">
+                      <label for="direccion">Dirección</label>
+                      <input name="direccion" type="text" class="form-control" id="direccion" placeholder="" required>
+                      <div class="valid-feedback">¡Ok válido!</div>
+                      <div class="invalid-feedback">Complete el campo.</div>   
+                    </div>
+                    <div class="col-md-4 mb-3">
+                      <label for="usuario">Nombre de usuario</label>
+                      <div class="input-group">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text" id="inputGroupPrepend">@</span>
+                        </div>
+                        <input name="usuario" type="text" class="form-control" id="usuario" placeholder="" aria-describedby="inputGroupPrepend" required>
+                        <div class="valid-feedback">¡Ok válido!</div>
+                      <div class="invalid-feedback">Complete el campo.</div>   
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                      <label class="form-check-label" for="invalidCheck">Acepto Me envíen correos Span y difundan mis datos a to-kiski</label>
+                      <div class="valid-feedback">¡Aceptado!</div>
+                      <div class="invalid-feedback">Marca el check.</div>  
+                    </div>
+                  </div>
+                  <button class="btn btn-primary mt-2" type="submit">Enviar</button>
+                </form>
+        </div>   
+    </div>
+            </div>       
+        </div>                  
+    </div>
 
 <!--
     Mi Js
@@ -152,11 +207,13 @@
     <script src="/node_modules/bootstrap/dist/js/bootstrap.js"></script>
     <script src="/node_modules/bootstrap/dist/js/bootstrap.min.js" crossorigin="anonymous"></script>-->
   
-    <script src="/js/bootstrap.js" crossorigin="anonymous"></script>
-    <script src="/js/bootstrap.min.js" ></script>
-    <script src="/js/HowLongPx.js"></script>
-    <script src="/js/core.js"></script>
-    <script src="/js/type.js"></script>
+    
+    <script src="./js/bootstrap.js" crossorigin="anonymous"></script>
+    <script src="./js/bootstrap.min.js" ></script>
+    <script src="./js/HowLongPx.js"></script>
+    <script src="./js/codigo.js"></script>
+    <script src="./js/core.js"></script>
+    <script src="./js/type.js"></script>
 </body>
 
 </html>
