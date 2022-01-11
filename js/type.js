@@ -6,6 +6,6 @@ const type = new Typewriter(app, {
 });
 
 type
-    .typeString('FEATURES')
+    .typeString('Prueba de despliegue')
     .pauseFor(5000) /*Pausa antes de empezar de 200 ms */
     .start();    
